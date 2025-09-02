@@ -33,7 +33,7 @@ jobs:
 
     # Checkout head repo code
     - name: Checkout head repo code
-      uses: actions/checkout@v4
+      uses: actions/checkout@v5
       with:
         # Repository as {owner}/{repo} to checkout from the head repository
         repository: ${{ github.event.pull_request.head.repo.full_name }}
