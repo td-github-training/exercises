@@ -17,7 +17,7 @@ jobs:
     steps:
       # Needed so we can read the step number from -step.txt
       - name: Checkout step file from repo
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           ref: step
           sparse-checkout: |
@@ -38,7 +38,7 @@ jobs:
 
       # We'll need to check out the repository so that we can edit the README.
       - name: Checkout
-        uses: actions/checkout@v4
+        uses: actions/checkout@v6
         with:
           fetch-depth: 0 # Let's get all the branches.
 
